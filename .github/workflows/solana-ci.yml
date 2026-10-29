@@ -3,6 +3,8 @@ permissions:
   contents: read
 
 on:
+  push:
+    branches: [draft/token-2022-pausable-ci]
   pull_request:
     branches: [main]
 
