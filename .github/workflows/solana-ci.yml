@@ -7,6 +7,7 @@ on:
     branches:
       - draft/token-2022-pausable-ci
       - experiment/anchor-1.2-pausable
+      - fix/anchor-1.2-solana3-test-stack
   pull_request:
     branches: [main]
 
