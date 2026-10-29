@@ -58,7 +58,7 @@ fn pay_for_gas<'info>(
         gas_limit * base_fee * cfg.gas_config.gas_cost_scaler / cfg.gas_config.gas_cost_scaler_dp;
 
     let cpi_ctx = CpiContext::new(
-        system_program.to_account_info(),
+        system_program.key(),
         anchor_lang::system_program::Transfer {
             from: payer.to_account_info(),
             to: gas_fee_receiver.to_account_info(),
