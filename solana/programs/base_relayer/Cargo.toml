@@ -27,4 +27,4 @@ solana-keypair = "=3.0.0"
 solana-loader-v3-interface = { version = "=6.1.0", features = ["serde"] }
 solana-message = "=3.0.0"
 solana-signer = "=3.0.0"
-solana-transaction = "=3.0.0"
+solana-transaction = "=3.0.1"
