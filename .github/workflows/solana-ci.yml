@@ -3,6 +3,10 @@ permissions:
   contents: read
 
 on:
+  push:
+    branches:
+      - draft/token-2022-pausable-ci
+      - experiment/anchor-1.2-pausable
   pull_request:
     branches: [main]
 
@@ -32,10 +36,10 @@ jobs:
         with:
           cache-all-crates: true
 
-      - name: Install Solana CLI 2.1.21
+      - name: Install Solana CLI 4.1.2
         shell: bash
         run: |
-          sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.21/install)"
+          sh -c "$(curl -sSfL https://release.anza.xyz/v4.1.2/install)"
           echo "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
           export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
           solana --version
