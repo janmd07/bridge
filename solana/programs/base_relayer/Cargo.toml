@@ -13,11 +13,10 @@ default = []
 cpi = ["no-entrypoint"]
 no-entrypoint = []
 no-idl = []
-no-log-ix-name = []
 idl-build = ["anchor-lang/idl-build"]
 
 [dependencies]
-anchor-lang = "=0.32.2"
+anchor-lang = "0.31.1"
 
 [dev-dependencies]
 bincode = "1.3"
